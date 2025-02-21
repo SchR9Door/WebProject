@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Alex Kutuzov's Portfolio{% endblock %}</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+    h2 {
+      font-size: 24px;
+      color: #555;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    .intro a {
+      color: #007BFF;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    .intro a:hover {
+      text-decoration: underline;
+    }
+    .project-list {
+      margin-top: 20px;
+    }
+    .project-list li {
+      margin-bottom: 15px;
+    }
+    .project-list a {
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .project-list a:hover {
+      text-decoration: underline;
+    }
+    .monitor {
+      width: 100%;
+      height: 500px;
+      background-color: white;
+      position: relative;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .monitor iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      right: -100%;
+      transition: right 0.5s ease-in-out;
+    }
+    .monitor iframe.active {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <h1>Hi, I’m Aleksandr Kutuzov</h1>
+    <h2>Cybersecurity Analyst: Keeping Your Digital World Secure and Sound</h2>
+    <p>
+      <a href="mailto:kutuzov.troubleshooting@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/kutuzov-aleksandr/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
+  {% block content %}{% endblock %}
+
+  <script>
+    function loadSite(url) {
+      const iframe = document.getElementById('display');
+      iframe.classList.remove('active');
+      setTimeout(() => {
+        iframe.src = url;
+        iframe.classList.add('active');
+      }, 100);
+    }
+  </script>
+
+</body>
+</html>
