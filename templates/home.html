@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>My Projects</h2>
+  <ul class="project-list">
+    {% for project in projects %}
+      <li>
+        <a href="#" onclick="loadSite('{{ url_for('project_detail', project_id=project.id) }}')">
+          {{ project.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="monitor">
+    <iframe id="display"></iframe>
+  </div>
+{% endblock %}
