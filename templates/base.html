@@ -72,14 +72,17 @@
   </style>
 </head>
 <body>
+   {% if request.endpoint == "home" %}
   <div class="intro">
     <h1>Hi, I’m Aleksandr Kutuzov</h1>
     <h2>Cybersecurity Analyst: Keeping Your Digital World Secure and Sound</h2>
     <p>
       <a href="mailto:kutuzov.troubleshooting@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/kutuzov-aleksandr/" target="_blank">LinkedIn</a>
+	  <a href="https://github.com/SchR9Door">Github</a>
     </p>
   </div>
+  {% endif %}
 
   {% block content %}{% endblock %}
 
