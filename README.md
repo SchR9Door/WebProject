@@ -4,7 +4,7 @@ Flask Markdown Portfolio - Project Documentation
 This is a Flask-based portfolio website that dynamically loads projects from Markdown files, 
 stores them in a SQLite database, and displays them with images.
 
-===========================
+
 1️⃣ How to Start the Website
 ===========================
 
@@ -26,7 +26,7 @@ stores them in a SQLite database, and displays them with images.
 6. Open your browser and go to:
    http://127.0.0.1:5000/
 
-==========================================
+
 2️⃣ How to Add New Projects (Markdown Import)
 ==========================================
 
@@ -38,7 +38,7 @@ stores them in a SQLite database, and displays them with images.
 python import_markdown.py
 5. The project will now be visible on the website!
 
-==========================
+
 3️⃣ Modules Used in This Project
 ==========================
 
@@ -50,7 +50,7 @@ python import_markdown.py
 - **os** - Handles file operations for Markdown import
 - **re** - Regular expressions to clean Markdown file paths
 
-==========================
+
 4️⃣ Database Management
 ==========================
 
@@ -64,7 +64,7 @@ python app.py  # Recreate tables
 
 - Manually add a project via Python:
 
-==========================
+
 5️⃣ Features & To-Do
 ==========================
 
@@ -76,9 +76,7 @@ python app.py  # Recreate tables
 🚀 Image upload via web UI (To-Do)  
 🚀 Deploy on DigitalOcean/Heroku (To-Do)  
 
-==========================
-6️⃣ Contact & Contributions
-==========================
+
 
 
 
