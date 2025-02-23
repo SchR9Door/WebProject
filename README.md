@@ -80,6 +80,5 @@ python app.py  # Recreate tables
 6️⃣ Contact & Contributions
 ==========================
 
-Feel free to fork this repository and submit pull requests!  
-If you have any questions, contact **Aleksandr Kutuzov** via email: kutuzov.troubleshooting@gmail.com  
+
 
